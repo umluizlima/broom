@@ -1,4 +1,4 @@
-#! python3
+#!/usr/bin/env python3
 # event_horizon.pyw - Moves files from Desktop to Singularity (within Downloads)
 # Usage:
 #   black_hole - moves every file on Desktop to Downloads/Singularity   
