@@ -6,10 +6,7 @@
 
 import os, shutil
 
-if os.name == 'nt':
-    base_path = os.environ['HOMEDRIVE'] + os.environ['HOMEPATH']
-else:
-    base_path = os.environ['HOME']
+base_path = os.path.expanduser('~')
 desktop = os.path.join(base_path, 'Desktop')
 singularity = os.path.join(base_path, 'Downloads', 'Singularity')
 
