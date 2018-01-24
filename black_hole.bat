@@ -1,1 +1,1 @@
-@pyw.exe C:\User\Luiz Lima\Documents\GitHub\black-hole\event_horizon.pyw %*
+@py.exe "C:\Users\Luiz Lima\Documents\GitHub\black-hole\event_horizon.pyw" %*

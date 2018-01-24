@@ -6,9 +6,11 @@
 
 import os, shutil
 
-base_path = os.environ['HOME']
+if os.name == 'nt':
+    base_path = os.environ['HOMEDRIVE'] + os.environ['HOMEPATH']
+else:
+    base_path = os.environ['HOME']
 desktop = os.path.join(base_path, 'Desktop')
-#downloads = os.path.join(base_path, 'Downloads')
 singularity = os.path.join(base_path, 'Downloads', 'Singularity')
 
 if not os.path.lexists(singularity):
@@ -20,17 +22,15 @@ for filename in os.listdir(desktop):
     if os.path.lexists(os.path.join(singularity, filename)):
         n = 1
         root, ext = os.path.splitext(filename)
-        while os.path.lexists(os.path.join(singularity, root + '(' + str(n) + ')' + ext)):
+        while os.path.lexists(os.path.join(singularity, root + ' (' + str(n) + ')' + ext)):
             n += 1
-        new_filename = root + '(' + str(n) + ')' + ext
+        new_filename = root + ' (' + str(n) + ')' + ext
         os.rename(os.path.join(desktop, filename), os.path.join(desktop, new_filename))
         filename = new_filename
-    
+
     #Send file to singularity
     try:
         shutil.move(os.path.join(desktop, filename), singularity)
-        #print(filename, 'was sent to the singularity')
+        print(filename, 'was sent to the singularity')
     except shutil.Error:
         print('An error occurred on file:', filename)
-
-
