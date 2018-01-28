@@ -1,1 +1,0 @@
-@py.exe "C:\Users\Luiz Lima\Documents\GitHub\black-hole\event_horizon.pyw" %*
