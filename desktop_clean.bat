@@ -1,1 +1,0 @@
-@pyw.exe "C:\Users\Luiz Lima\Documents\GitHub\black-hole\desktop_clean.pyw" %*
