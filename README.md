@@ -1,16 +1,31 @@
-# Black Hole
-A simple Desktop organizer that moves all files and folders from /Desktop to /Downloads/Singularity
+# Broom
+> Keep your desktop clutter-free.
 
-## How it works
+## Description
 
-Using Python's os and shutil modules, we check if the Singularity folder under Downloads already exists. If it doesn't, create it.
-Then, for every file or folder on Desktop, we send it into the Singularity.
+This script is a simple Desktop organizer that moves all files and folders from /Desktop to /Downloads/Rug.
 
-## License
+## Installation
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+```sh
+> pip install broom
+```
 
-## References
+## Usage
 
-OS module: https://docs.python.org/3/library/os.html#module-os
-SHUTIL module: https://docs.python.org/3/library/shutil.html
+- On Windows
+
+  Hit **Win + R**, then
+  ```sh
+  > broom
+  ```
+  Admire your wallpaper once again.
+
+## Links
+- Repository: https://github.com/umluizlima/broom
+- References:
+  - os module: https://docs.python.org/3/library/os.html#module-os
+  - shutil module: https://docs.python.org/3/library/shutil.html
+
+## Licensing
+Distributed under the MIT license. See `LICENSE` for more information.
