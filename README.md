@@ -7,15 +7,20 @@ This script is a simple Desktop organizer that moves all files and folders from 
 
 ## Installation
 
+- Windows
+
 ```sh
 > pip install broom
 ```
 
+- Linux
+
+```sh
+> sudo pip3 install broom
+```
+
 ## Usage
 
-- On Windows
-
-  Hit **Win + R**, then
   ```sh
   > broom
   ```
